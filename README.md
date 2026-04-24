@@ -95,8 +95,58 @@ The script programs key safety features into ArduPilot:
 * Arms vehicle
 * Executes takeoff to ~5 meters
 
+### 4. Mission Generation (Geometric Waypoints)
 Waypoints are generated relative to:
 ```
 home position + initial bearing
 ```
+Example mission:
+* WP1 → inside geofence
+* WP2 → outside geofence (intentional breach)
+* RTL → fallback
+
+This enables controlled testing of:
+* geofence behavior
+* failsafe responses
+
+### 5. Mission Execution
+* Uploads mission via MAVLink
+* Switches to AUTO mode
+* Monitors execution in real time
+
+### 6. Real-Time Monitoring & Logging
+
+The script logs:
+* STATUSTEXT messages (fence, failsafe events)
+* flight modes
+* GPS position
+* system state transitions
+
+All events are saved in:
+```
+JSONL (flight_events.jsonl)
+```
+This allows:
+* replay
+* debugging
+* post-flight analysis
+
+### 7. Collision Avoidance Hooks (Optional)
+
+The script includes a state-machine-based avoidance framework:
+
+States:
+```
+CRUISE → HOLD → BACKUP → YAW → RESUME
+```
+Inputs:
+* distance sensors (MAVLink DISTANCE_SENSOR / OBSTACLE_DISTANCE)
+
+Actions:
+* stop
+* reverse
+* yaw away
+* resume mission
+
+Note: Currently implemented as hooks for extension, not full control override
 
