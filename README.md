@@ -1,9 +1,9 @@
 # QGroundControl + Gazebo + ArduCopter SITL + Offboard Python Control
 
 This project demonstrates a complete software-in-the-loop (SITL) drone simulation pipeline using:
-* Gazebo → physics-based simulation environment \
-* ArduPilot (ArduCopter SITL) → flight controller firmware \
-* QGroundControl (QGC) → ground control station  \
+* Gazebo → physics-based simulation environment 
+* ArduPilot (ArduCopter SITL) → flight controller firmware 
+* QGroundControl (QGC) → ground control station  
 * Python (pymavlink) → offboard control, mission logic, and safety behaviors  
 
 The system enables realistic autonomous flight testing without (drone) hardware, including mission execution, geofencing, failsafes, and optional collision avoidance logic.
@@ -31,7 +31,8 @@ QGroundControl &emsp;  Python Offboard Script \
 
 ## Software Installation
 
-https://ardupilot.org/dev/docs/sitl-with-gazebo.html
+https://ardupilot.org/dev/docs/sitl-with-gazebo.html \
+https://docs.qgroundcontrol.com/master/en/qgc-user-guide/getting_started/download_and_install.html
 
 ## Simulation Execution Workflow
 
