@@ -31,6 +31,7 @@ QGroundControl &emsp;  Python Offboard Script \
 
 ## Software Installation
 
+https://ardupilot.org/dev/docs/sitl-with-gazebo.html
 
 ## Simulation Execution Workflow
 
