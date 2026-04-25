@@ -33,6 +33,65 @@ Simulation → Control → Safety → Autonomy → Perception → Real-World Bri
   * takeoff
   * waypoint logic
 
+## Video 4 - How Drone Safety Actually Works (Geofence + Failsafe Explained)
+### Content:
+* Geofence:
+  * radius
+  * altitude
+* Failsafe:
+  * MAVLink loss
+* Show:
+  * intentional breach
+  * LAND trigger
+
+## Video 5 - Analyzing Drone Missions with Logs (Replay + Debugging)
+### Content:
+* Show:
+  * JSONL logs
+  * replay mode
+* Explain:
+  * STATUSTEXT
+  * mode transitions
+* Example:
+  * “Here’s exactly when the fence triggered”
+
+## Video 6 - Adding Obstacle Avoidance to a Drone (State Machine Approach)
+### Content:
+* Your avoidance states:
+  * HOLD
+  * BACKUP
+  * YAW
+* Explain:
+  * how sensors plug in
+* Show:
+  * simulated behavior (even mocked)
+
+## Video 7 - How to Program Drone Missions with Math (Bearing + Waypoints)
+### Content:
+* Explain:
+  * bearing → north/east conversion
+  * lat/lon offsets
+* Show:
+  * dynamic waypoint generation
+
+## Video 8 - From Simulation to Real Drone (What Actually Changes)
+### Content:
+* What stays the same:
+  * MAVLink
+  * logic
+* What changes:
+  * timing
+  * sensors
+  * noise
+
+## Video 9 - Building a DIY Multispectral Drone (Low Cost vs Commercial)
+### Content:
+* Connect your earlier work:
+  * OV9281 cameras
+  * filters
+* Explain:
+  * spectral imaging basics
+
 # QGroundControl + Gazebo + ArduCopter SITL + Offboard Python Control
 
 This project demonstrates a complete software-in-the-loop (SITL) drone simulation pipeline using:
