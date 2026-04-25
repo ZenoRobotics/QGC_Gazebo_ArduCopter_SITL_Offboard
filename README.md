@@ -86,7 +86,7 @@ Simulation → Control → Safety → Autonomy → Perception → Real-World Bri
 
 ## Video 9 - Building a DIY Multispectral Drone (Low Cost vs Commercial)
 ### Content:
-* Connect your earlier work:
+* Connect my earlier work:
   * OV9281 cameras
   * filters
 * Explain:
