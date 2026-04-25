@@ -1,3 +1,38 @@
+# ZenoRobotics Series: “Build a Drone Autonomy Stack from Scratch (No Hardware Required)”
+
+## Big Picture
+
+Simulation → Control → Safety → Autonomy → Perception → Real-World Bridge
+
+# Video Series (YouTube) Structure
+
+## Video 1 - Autonomous Drone Simulation with ArduPilot + Gazebo 
+### Focus:
+* Show the full system running
+* Highlight:
+  * takeoff
+  * mission execution
+  * geofence breach → LAND
+* Quick architecture explanation
+
+## Video 2 - How to Setup ArduPilot SITL + Gazebo + QGC (Step-by-Step)
+### Content:
+* Install ArduPilot
+* Launch Gazebo
+* Connect QGC
+* Explain UDP ports
+
+## Video 3 - Controlling a Drone with Python (MAVLink Offboard Explained)
+### Content:
+* Walk through your script:
+  * heartbeat
+  * connection
+  * modes
+  * commands
+* Show:
+  * takeoff
+  * waypoint logic
+
 # QGroundControl + Gazebo + ArduCopter SITL + Offboard Python Control
 
 This project demonstrates a complete software-in-the-loop (SITL) drone simulation pipeline using:
