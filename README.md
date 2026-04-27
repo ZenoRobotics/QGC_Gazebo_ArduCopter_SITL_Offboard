@@ -45,7 +45,7 @@ In this video, we set up a complete drone simulation environment using ArduPilot
 * Check telemetry (GPS, heading, altitude)
 * Set vehicle mode to GUIDED
 
-6. Understanding UDP Communication (Key Concept)
+5. Understanding UDP Communication (Key Concept)
 * ArduPilot sends MAVLink data over UDP
 * Each port corresponds to a different consumer:
 * 14550 → QGroundControl (monitoring)
