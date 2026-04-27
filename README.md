@@ -12,7 +12,7 @@ Simulation → Control → Safety → Autonomy → Perception → Real-World Bri
 * Highlight:
   * takeoff
   * mission execution
-  * geofence breach → LAND
+  * geofence breach → Switch to RTL Execution
 * Quick architecture explanation
 
 ## Video 2 - How to Setup ArduPilot SITL + Gazebo + QGC (Step-by-Step)
