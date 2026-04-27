@@ -15,13 +15,50 @@ Simulation → Control → Safety → Autonomy → Perception → Real-World Bri
   * geofence breach → Switch to RTL Execution
 * Quick architecture explanation
 
-## Video 2 - How to Setup ArduPilot SITL + Gazebo + QGC (Step-by-Step)
-### Content:
-* Install ArduPilot
-* Launch Gazebo
-* Connect QGC
-* Explain UDP ports
+## Video 2 - Video 2 – How to Setup ArduPilot SITL + Gazebo + QGroundControl (Step-by-Step)
+### Overview
 
+In this video, we set up a complete drone simulation environment using ArduPilot SITL, Gazebo, and QGroundControl. By the end, you will have a fully working virtual drone system ready for autonomous control.
+
+### Setup Steps
+1. Install ArduPilot
+* Clone the ArduPilot repository
+* Install required dependencies
+* Set up the environment
+    
+2. Launch Gazebo Simulation
+* Start the Gazebo world
+* Load the Iris quadcopter model
+* Verify simulation is running
+    
+3. Start ArduCopter SITL
+* Run sim_vehicle.py with Gazebo support
+* Enable MAVLink output streams
+
+```
+--out=udp:127.0.0.1:14540  # Python script
+--out=udp:127.0.0.1:14550  # QGroundControl
+```
+4. Connect QGroundControl
+* Launch QGroundControl
+* Verify automatic connection
+* Check telemetry (GPS, heading, altitude)
+* Set vehicle mode to GUIDED
+
+6. Understanding UDP Communication (Key Concept)
+* ArduPilot sends MAVLink data over UDP
+* Each port corresponds to a different consumer:
+* 14550 → QGroundControl (monitoring)
+* 14540 → Python script (control)
+
+=> This allows multiple programs to interact with the drone simultaneously.
+
+### Expected Result
+* Gazebo simulation running
+* ArduPilot SITL active
+* QGroundControl connected and displaying telemetry
+* System ready for offboard Python control
+   
 ## Video 3 - Controlling a Drone with Python (MAVLink Offboard Explained)
 ### Content:
 * Walk through your script:
