@@ -61,7 +61,7 @@ In this video, we set up a complete drone simulation environment using ArduPilot
    
 ## Video 3 - Controlling a Drone with Python (MAVLink Offboard Explained)
 ### Content:
-* Walk through your script:
+* Walk through the Python script:
   * heartbeat
   * connection
   * modes
@@ -79,7 +79,7 @@ In this video, we set up a complete drone simulation environment using ArduPilot
   * MAVLink loss
 * Show:
   * intentional breach
-  * LAND trigger
+  * RTL enabled
 
 ## Video 5 - Analyzing Drone Missions with Logs (Replay + Debugging)
 ### Content:
